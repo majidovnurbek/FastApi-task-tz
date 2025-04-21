@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary  # PostgreSQL uchun. SQLite ishlatsang, bu kerak emas
+python-dotenv    # .env fayldan konfiguratsiya o‘qish
+passlib[bcrypt]  # parolni hash qilish
+python-jose[cryptography]  # JWT uchun
+pydantic
+alembic  # ma'lumotlar bazasini migratsiya qilish uchun (optional lekin foydali)
+pytest  # testlar uchun
+httpx   # pytest bilan API test qilish uchun
