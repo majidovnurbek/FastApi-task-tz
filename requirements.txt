@@ -1,11 +1,14 @@
-fastapi
+fastapi~=0.115.12
 uvicorn[standard]
-sqlalchemy
+sqlalchemy~=2.0.40
 psycopg2-binary  # PostgreSQL uchun. SQLite ishlatsang, bu kerak emas
-python-dotenv    # .env fayldan konfiguratsiya o‘qish
-passlib[bcrypt]  # parolni hash qilish
-python-jose[cryptography]  # JWT uchun
-pydantic
+python-dotenv~=1.1.0
+passlib[bcrypt]~=1.7.4
+python-jose[cryptography]~=3.4.0
+pydantic~=2.11.3
 alembic  # ma'lumotlar bazasini migratsiya qilish uchun (optional lekin foydali)
 pytest  # testlar uchun
 httpx   # pytest bilan API test qilish uchun
+
+starlette~=0.46.2
+pydantic-settings~=2.9.1
